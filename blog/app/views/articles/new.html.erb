@@ -1,4 +1,13 @@
 <h1>New Post</h1>
 
-<%= render "form", article: @article %>
 
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Create new post</h4>
+                <%= render "form", article: @article %>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,12 +1,15 @@
 <h1>Posts</h1>
 
 
-<ul>
   <% @articles.each do |article| %>
-    <li>
-      <p><%= link_to article.title, article %></p>
-    </li>
+    <div class="col">
+      <div class="col-md-3">
+        <div class="comment_head">
+          <p><%= link_to article.title, article %></p>
+        </div>
+        <br>
+      </div>
+    </div>
   <% end %>
-</ul>
 
 <button><%= link_to "New Post", new_article_path %></button>

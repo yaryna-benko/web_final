@@ -46,5 +46,29 @@
     color: antiquewhite;
   }
 
-
+.comm_btn {
+  border-radius: 20px;
+  text-align: center;
+  padding: 3px;
+  background-color: #34526f;
+  color: antiquewhite;
+  width: 70px;
+  height: 30px;
+}
   
+.comment {
+  width: 300px;
+  background-color: #34526f;
+  color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.comment_head {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: teal;
+  border-width: 10px;
+  background-color: coral;
+  color: black;
+}

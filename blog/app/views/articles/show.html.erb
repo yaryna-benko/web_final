@@ -1,25 +1,29 @@
 <h1><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
-
-<ul>
-  <button><%= link_to "Edit", edit_article_path(@article) %></button>
-  <button><%= link_to "Delete", article_path(@article),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %></button>
-</ul>
-
-<h2>Comments</h2>
-<%= render @article.comments %>
-
 <br><br>
 <div class="row">
-    <div class="col-md-3">
+  <div class="col-md-5">
+    <p><%= @article.body %></p>
+    <% if @article.image.attached? %>
+      <image src="<%=(url_for(@article.image))%>">
+    <% end %>
+    <br><br>
+    <ul>
+      <button><%= link_to "Edit", edit_article_path(@article) %></button>
+      <button><%= link_to "Delete", article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %></button>
+    </ul>
+  </div>
+  <div class="col-md-4">
+          <%= render @article.comments %>
+  </div>
+  <div class="col-md-3">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Add a comment:</h4>
                 <%= render 'comments/form' %>
             </div>
         </div>
-    </div>
+  </div>
 </div>

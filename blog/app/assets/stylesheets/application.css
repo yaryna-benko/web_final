@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+ * {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: antiquewhite;
+    color: #34526f;
+    font-family: 'Asap', sans-serif;
+  }
+
+ h1 {
+    background: #34526f;
+    padding: 20px;
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+ }
+
+ button {
+    border-radius: 20px;
+    background-color: #34526f;
+    color: antiquewhite;
+    width: 190px;
+    height: 30px;
+  }
